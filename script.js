@@ -1,12 +1,13 @@
 var app = new Vue(
   {
-  el: '#wrapper',
+  el: "#vue_container",
     data: {
       imageIndex: 0,
       images: [
         "https://file.cure-naturali.it/site/image/hotspot_article_first/29131.jpg",
         "https://www.intoscana.it/wp-content/uploads/dalia_credits_-lkordela_shutterstock.jpg",
         "https://www.faidateingiardino.com/wp-content/uploads/2018/03/gazania-750x400.jpg",
+        "https://bulbishop.it/wp-content/uploads/2014/12/Bulbi-Tulipano-Gavota-01b.jpg"
       ]
     },
     methods: {
@@ -23,8 +24,8 @@ var app = new Vue(
         }
       },
       autoPlay: function () {
-        setTimeout(function () {
-          this.nextImage
+        setInterval(function () {
+          this.nextImage;
         }, 3000);
 
       }
