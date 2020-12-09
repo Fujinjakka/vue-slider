@@ -1,0 +1,45 @@
+#wrapper{
+  position: relative;
+  display: flex;
+  height: 400px;
+  width: 600px;
+  background-color: blue;
+}
+#left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 10%;
+  background-color: lightpink;
+}
+#mid{
+  height: 100%;
+  width: 80%;
+  background-color: lightgreen;
+}
+#right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 10%;
+  background-color: lightpink;
+}
+i {
+  font-size: 20px;
+}
+i:hover {
+  cursor: pointer;
+}
+#mid i {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#mid img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
