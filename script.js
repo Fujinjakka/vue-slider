@@ -21,6 +21,12 @@ var app = new Vue(
         if (this.imageIndex == -1) {
           this.imageIndex = (this.images.length -1);
         }
+      },
+      autoPlay: function () {
+        setTimeout(function () {
+          this.nextImage
+        }, 3000);
+
       }
     }
   }

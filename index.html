@@ -14,13 +14,16 @@
       </div>
       <div id="mid">
         <img :src="images[imageIndex]" alt="">
-        <i class="far fa-circle"></i>
         <!-- <i class="fas fa-circle"></i> -->
       </div>
       <div id="right">
         <i class="fas fa-chevron-right" @click="nextImage"></i>
       </div>
     </div>
+    <div>
+      <i v-for="(image, index) in images" class="far fa-circle"></i>
+    </div>
+      <button type="button" name="button" @click="autoPlay">AUTOPLAY</button>
 
 
     <script src="script.js" charset="utf-8"></script>
