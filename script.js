@@ -24,11 +24,7 @@ var app = new Vue(
         }
       },
       autoPlay: function () {
-        console.log("This riga 28");
-        console.log(this);
-        // var vm = this;
         setInterval(this.nextImage, 3000);
-
       }
     }
   }

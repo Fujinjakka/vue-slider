@@ -22,7 +22,7 @@
         </div>
       </div>
       <div id="circle">
-        <i v-for="(image, index) in images" :class="active" class="far fa-circle">
+        <i v-for="(image, index) in images" :class="(index == imageIndex) ? 'fas' : 'far'" class="far fa-circle">
         </i>
       </div>
       <div id="button">
